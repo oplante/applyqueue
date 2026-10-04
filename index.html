@@ -162,7 +162,9 @@ footer{border-top:1px solid var(--line);background:#efebe0;padding:34px 0 44px;m
 .price ul{list-style:none;margin:14px 0 0;padding:0;font-size:12.5px;color:#d8d2c4}
 .price li{padding:5px 0 5px 20px;position:relative}
 .price li::before{content:"";position:absolute;left:0;top:11px;width:9px;height:2.5px;background:var(--accent)}
-.price .closed{display:inline-block;margin-top:16px;font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#e8e2d4;border:1px solid #4a443c;border-radius:999px;padding:6px 12px}
+.price a.pay{display:inline-block;margin-top:16px;background:#c2410c;color:#fff;text-decoration:none;font-size:13.5px;font-weight:700;border-radius:9px;padding:11px 14px}
+.price a.pay:hover{background:#9a3412}
+.price .fine{display:block;margin-top:10px;font-size:11.5px;color:#a89f8d;line-height:1.45}
 .colophon{margin-top:30px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;font-size:11.5px;color:var(--muted);flex-wrap:wrap}
 @media (max-width:980px){
   .stats .wrap{grid-template-columns:repeat(2,1fr)}
@@ -235,7 +237,8 @@ footer{border-top:1px solid var(--line);background:#efebe0;padding:34px 0 44px;m
           <li>Month to month</li>
           <li>Stored in your browser — nothing uploaded</li>
         </ul>
-        <span class="closed">Checkout is not open · no payment is taken</span>
+        <a class="pay" href="https://buy.stripe.com/4gMfZg6jQefq8eM5iG8IU00">Subscribe, £829 a month</a>
+        <span class="fine">Opens card checkout. Month to month. VAT is not added on this link. The queue still stays in this browser, and nothing is sent.</span>
       </div>
     </div>
     <div class="colophon">
